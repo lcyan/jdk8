@@ -1,6 +1,7 @@
 package com.molloc.jdk8;
 
 import java.util.List;
+import java.util.function.Function;
 
 import com.google.common.collect.Lists;
 
@@ -35,6 +36,11 @@ public class Test3 extends Test {
 
         //2、把转换后的结果放到另一个集合中并打印出来
         list.stream().map(String::toUpperCase).forEach(System.out::println);
+        printLine();
+
+        Function<String, String> function = String::toUpperCase;
+        System.out.println(function.getClass().getInterfaces()[0]);
+
     }
 }
 
