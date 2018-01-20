@@ -2,6 +2,7 @@ package com.molloc.jdk8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * @author yanleichang
@@ -21,6 +22,20 @@ public class Test1 extends Test {
         }
         printLine();
 
-        list.forEach(item -> System.out.println(item));
+        //方式一
+        list.forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer input) {
+                System.out.println(input);
+            }
+        });
+        printLine();
+
+        //方式二, 通过lambda表达式
+        list.forEach(input -> System.out.println(input));
+        printLine();
+
+        //方式三， 通过方法引用
+        list.forEach(System.out::println);
     }
 }
