@@ -13,5 +13,6 @@ package com.molloc.jdk8;
 public interface MyInterface {
     void test();
 
+    @Override
     String toString();
 }
