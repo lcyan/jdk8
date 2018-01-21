@@ -6,10 +6,10 @@ import java.util.function.Function;
  * @author yanleichang
  * 理解 lambda表达式传递的是一种行为
  */
-public class FunctionTest extends Test {
+public class FunctionAbstractTest extends AbstractTest {
 
     public static void main(String[] args) {
-        FunctionTest test = new FunctionTest();
+        FunctionAbstractTest test = new FunctionAbstractTest();
         System.out.println(test.compute(1, value -> 2 * value));//传递的是行为
         printLine();
 

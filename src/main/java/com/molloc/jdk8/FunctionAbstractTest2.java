@@ -8,10 +8,10 @@ import java.util.function.Function;
  * @date 2018/1/20
  * 理解 Function#compose, Function#andThen
  */
-public class FunctionTest2 extends Test {
+public class FunctionAbstractTest2 extends AbstractTest {
 
     public static void main(String[] args) {
-        FunctionTest2 test = new FunctionTest2();
+        FunctionAbstractTest2 test = new FunctionAbstractTest2();
         System.out.println(test.compute(2, value -> value * 3, value -> value * value));
         System.out.println(test.compute2(2, value -> value * 3, value -> value * value));
         printLine();

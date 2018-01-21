@@ -3,7 +3,7 @@ package com.molloc.jdk8;
 /**
  * @author yanleichang
  */
-public class Test2 extends Test {
+public class AbstractTest2 extends AbstractTest {
 
     private void myTest(MyInterface myInterface) {
         System.out.println(1);
@@ -12,7 +12,7 @@ public class Test2 extends Test {
     }
 
     public static void main(String[] args) {
-        Test2 test2 = new Test2();
+        AbstractTest2 test2 = new AbstractTest2();
         //1、通过匿名内部类
         test2.myTest(new MyInterface() {
             @Override

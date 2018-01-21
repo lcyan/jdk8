@@ -9,7 +9,7 @@ import com.google.common.collect.Lists;
  * @author yanleichang
  * lambda表达式到底是什么类型，一定是由上下文信息才能断定的
  */
-public class Test3 extends Test {
+public class AbstractTest3 extends AbstractTest {
 
     public static void main(String[] args) {
         TheInterface i1 = () -> {

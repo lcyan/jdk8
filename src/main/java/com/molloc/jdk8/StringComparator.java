@@ -9,7 +9,7 @@ import com.google.common.collect.Lists;
 /**
  * @author yanleichang
  */
-public class StringComparator extends Test {
+public class StringComparator extends AbstractTest {
 
     public static void main(String[] args) {
         //对集合中的名字进行倒序排序

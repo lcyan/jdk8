@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 /**
  * @author yanleichang
  */
-public class Test1 extends Test {
+public class AbstractTest1 extends AbstractTest {
 
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
